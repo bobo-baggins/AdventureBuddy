@@ -10,11 +10,6 @@ class Chunk:
 		print("poo")
 
 class Words(Chunk):
-	'''
-	def __init__(self, text):
-		super().__init__(self)
-		self.text = text
-	'''
 	def draw(self, frame):
 		self.lab = tk.Label(master=frame, text=self.data)
 		self.lab.pack()
