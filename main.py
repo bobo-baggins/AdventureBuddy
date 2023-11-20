@@ -1,21 +1,31 @@
-import tkinter as tk
-from chunk import *
+import PyQt6.QtCore as Qt
+import PyQt6.QtWidgets as Pq
 
-window = tk.Tk()
+# Access to command line
+import sys
 
-frame1 = tk.Frame(window, relief = tk.RAISED, borderwidth=5)
-#frame2 = tk.Frame(window, relief = tk.SUNKEN, borderwidth=5, width =25, height=10)
+#sys.argv allows cli for app, one QApp instance per application!
+#
+class Mwindow(Pq.QMainWindow):
+    def __init__(self):
+        super().__init__()
 
-text_B_1 = text_B("Notes")
-#text_B_2 = text_B("Skills")
+        self.setWindowTitle("My App")
+        button = Pq.QPushButton("Touch Me!")
 
-text_B_1.draw(frame1)
-#text_B_2.draw(frame2)
+        self.setCentralWidget
+    
 
-frame1.pack()
-#frame2.pack()
+app = Pq.QApplication(sys.argv)
 
-#text_B_1.fill_text(1.0,'yummy\ntummy')
-#text_B_1.lock_text(frame1)
 
-window.mainloop()
+#window = QPushButton("Touch Me")
+window = Mwindow()
+window.show()
+#Windows are hidden by default
+
+
+#Start event looP
+app.exec()
+
+
