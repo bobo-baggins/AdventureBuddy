@@ -1,22 +1,21 @@
-import PyQt6.QtCore as Qt
-import PyQt6.QtWidgets as Pq
+import PySide6.QtCore as Qt
+import PySide6.QtWidgets as pq
 
-# Access to command line
-import sys
+import sys  # Access to command line
 
 #sys.argv allows cli for app, one QApp instance per application!
 #
-class Mwindow(Pq.QMainWindow):
+class Mwindow(pq.QMainWindow):
     def __init__(self):
         super().__init__()
 
         self.setWindowTitle("My App")
-        button = Pq.QPushButton("Touch Me!")
+        button = pq.QPushButton("Touch Me!")
 
         self.setCentralWidget
-    
 
-app = Pq.QApplication(sys.argv)
+
+app = pq.QApplication(sys.argv)
 
 
 #window = QPushButton("Touch Me")
@@ -27,5 +26,3 @@ window.show()
 
 #Start event looP
 app.exec()
-
-

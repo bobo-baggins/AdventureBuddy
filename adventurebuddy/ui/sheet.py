@@ -8,6 +8,3 @@ class Sheet(QtWidgets.QWidget):
         self.content = content
 
         self.setWindowTitle(self.title)
-
-
-    
